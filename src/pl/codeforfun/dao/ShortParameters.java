@@ -11,6 +11,8 @@ public class ShortParameters {
 	private String description;
 	private double windSpeed;
 	private double windDeg;
+	private double rain;
+	
 	/*
 	 * 	To present full name of day in simpe day format please add EEEE
 	 *	SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy 'at' HH:mm");
@@ -22,19 +24,20 @@ public class ShortParameters {
 		
 	}
 	
-	public ShortParameters(long timeStamp, double temp, String description, String icon, double windSpeed, double windDeg) {
+	public ShortParameters(long timeStamp, double temp, String description, String icon, double windSpeed, double windDeg, double rain) {
 		this.timeStamp = timeStamp;
 		this.temp = temp;
 		this.description = description;
 		this.icon = icon;
 		this.windSpeed = windSpeed;
 		this.windDeg = windDeg;
+		this.rain = rain;
 	}
 	
 	@Override
 	public String toString() {
 		return "ShortParameters [temp=" + temp + ", timeStamp=" + timeStamp + ", icon=" + icon + ", description="
-				+ description + ", windSpeed=" + windSpeed + ", windDeg=" + windDeg + ", sdf=" + sdf + "]";
+				+ description + ", windSpeed=" + windSpeed + ", windDeg=" + windDeg + ", rain=" + rain + "]";
 	}
 
 	/*
@@ -64,5 +67,9 @@ public class ShortParameters {
 	
 	public String getWindDeg() {
 		return String.format("%.1f", windDeg);
+	}
+	
+	public String getRain(){
+		return String.format("%.2f", rain);
 	}
 }

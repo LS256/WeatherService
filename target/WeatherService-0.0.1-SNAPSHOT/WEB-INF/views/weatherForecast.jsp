@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
 	<div class="mainInfo">
 		<h1>Weather forecast for ${cityName}</h1>
 		<h1>Country code ${countryCode}</h1>
@@ -32,6 +33,7 @@
 			<td>Temperatura</td>
 			<td>Description</td>
 			<td>Graphic</td>
+			<td>Rain</td>
 			<td>WindSpeed</td>
 			<td>WindDeg</td>
 		</tr>
@@ -41,6 +43,7 @@
 				<td> ${element.getTemp()} &#x2103 </td>
 				<td> ${element.getDescription()} </td>
 				<td> <img src=${element.getIcon()} ></td>
+				<td> ${element.getRain()} </td>
 				<td> ${element.getWindSpeed() } [m/s] </td>
 				<td> ${element.getWindDeg() } &deg</td>			
 			</tr>

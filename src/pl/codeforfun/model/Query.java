@@ -84,9 +84,17 @@ public class Query {
 				JsonNumber windDegJson = windObject.getJsonNumber("deg");
 				double windDeg = windDegJson.doubleValue();
 				
+				JsonObject rainObject = listObject.getJsonObject(i).getJsonObject("rain");
+				JsonNumber rainJson = null;
+				double rain = 0;
+				try{
+					rainJson = rainObject.getJsonNumber("3h");
+					rain = rainJson.doubleValue();
+				} catch(NullPointerException npe) {
+					rain = 0;
+				}
 				
-				
-				shortParametersDao.putElement(new ShortParameters(timeStamp, dayAvgTemp, description, icon, windSpeed, windDeg));
+				shortParametersDao.putElement(new ShortParameters(timeStamp, dayAvgTemp, description, icon, windSpeed, windDeg, rain));
 			}
 			
 			return new WeatherForecast(cityName, countryCode, shortParametersDao);
