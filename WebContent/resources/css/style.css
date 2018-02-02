@@ -5,3 +5,10 @@ body {
 td {
 	text-align: center;
 }
+
+		.error { color: #ff0000; }
+		.errorblock { color: #000; background-color: #ffEEEE; border: 3px solid #ff0000; padding: 8px; margin: 16px; }
+		.topBar { background-color: #000000; color: #efefef; height: 30px;}
+		.languageTopBar { background-color: #000000; color: #efefef; float: right; min-width: 100px; font-size: 20px; padding: 3px;}		
+		a {text-decoration: none; color: #efefef;}
+		.loginFrame {margin: auto; border: 1px dashed #000000; width: 40%; padding: 10px; line-height: 2;'}

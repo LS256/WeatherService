@@ -11,12 +11,21 @@ public class UrlGenerator {
 		
 	}
 	
-	public UrlGenerator(String urlAddress) {
-		this.urlAddress = urlAddress;
+	public void setUrlAddress(String urlAddress, String weatherType) {
+		if(weatherType.equals("longTerm")){
+			this.urlAddress = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + urlAddress + "&cnt=17&APPID="+uniqueAPPID;
+		} else {
+			this.urlAddress = "http://api.openweathermap.org/data/2.5/forecast?q=" + urlAddress + "&APPID="+uniqueAPPID;
+		}
 	}
 	
 	public String getUrlAddress() {
-		return "http://api.openweathermap.org/data/2.5/forecast?q=" + urlAddress + "&APPID="+uniqueAPPID;
+		return this.urlAddress;
+	}
+	
+	@Override
+	public String toString() {
+		return this.urlAddress;
 	}
 	
 }

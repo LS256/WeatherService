@@ -1,3 +1,4 @@
+pl/codeforfun/model/Query16.class
 pl/codeforfun/model/Connection.class
 pl/codeforfun/model/Query.class
 pl/codeforfun/model/WeatherForecast.class
@@ -5,3 +6,4 @@ pl/codeforfun/controller/WebController.class
 pl/codeforfun/dao/ShortParameters.class
 pl/codeforfun/dao/ShortParametersDao.class
 pl/codeforfun/model/UrlGenerator.class
+pl/codeforfun/controller/WebController2.class

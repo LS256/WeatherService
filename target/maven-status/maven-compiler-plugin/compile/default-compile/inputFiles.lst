@@ -3,5 +3,7 @@
 /home/lukasz/workspace/WeatherService/src/pl/codeforfun/controller/WebController.java
 /home/lukasz/workspace/WeatherService/src/pl/codeforfun/model/Connection.java
 /home/lukasz/workspace/WeatherService/src/pl/codeforfun/dao/ShortParametersDao.java
+/home/lukasz/workspace/WeatherService/src/pl/codeforfun/controller/WebController2.java
 /home/lukasz/workspace/WeatherService/src/pl/codeforfun/model/WeatherForecast.java
 /home/lukasz/workspace/WeatherService/src/pl/codeforfun/model/UrlGenerator.java
+/home/lukasz/workspace/WeatherService/src/pl/codeforfun/model/Query16.java

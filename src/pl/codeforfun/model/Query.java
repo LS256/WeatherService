@@ -23,7 +23,7 @@ public class Query {
 	
 //	@Autowired
 //	private ShortParametersDao shortParametersDao;
-	ShortParametersDao shortParametersDao;	// = new ShortParametersDao();
+	ShortParametersDao shortParametersDao;
 	
 	
 	String urlLink = "";
@@ -94,7 +94,7 @@ public class Query {
 					rain = 0;
 				}
 				
-				shortParametersDao.putElement(new ShortParameters(timeStamp, dayAvgTemp, description, icon, windSpeed, windDeg, rain));
+				shortParametersDao.putElement(new ShortParameters(timeStamp, dayAvgTemp, 0, description, icon, windSpeed, windDeg, rain));
 			}
 			
 			return new WeatherForecast(cityName, countryCode, shortParametersDao);

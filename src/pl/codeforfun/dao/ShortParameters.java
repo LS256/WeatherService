@@ -6,6 +6,7 @@ import java.util.Date;
 public class ShortParameters {
 
 	private double temp;
+	private double tempAtNight;
 	private long timeStamp;
 	private String icon;
 	private String description;
@@ -24,9 +25,10 @@ public class ShortParameters {
 		
 	}
 	
-	public ShortParameters(long timeStamp, double temp, String description, String icon, double windSpeed, double windDeg, double rain) {
+	public ShortParameters(long timeStamp, double temp, double tempAtNight, String description, String icon, double windSpeed, double windDeg, double rain) {
 		this.timeStamp = timeStamp;
 		this.temp = temp;
+		this.tempAtNight = tempAtNight;
 		this.description = description;
 		this.icon = icon;
 		this.windSpeed = windSpeed;
@@ -36,7 +38,7 @@ public class ShortParameters {
 	
 	@Override
 	public String toString() {
-		return "ShortParameters [temp=" + temp + ", timeStamp=" + timeStamp + ", icon=" + icon + ", description="
+		return "ShortParameters [temp=" + temp + ",tempAtNight=" + tempAtNight+", timeStamp=" + timeStamp + ", icon=" + icon + ", description="
 				+ description + ", windSpeed=" + windSpeed + ", windDeg=" + windDeg + ", rain=" + rain + "]";
 	}
 
@@ -70,6 +72,10 @@ public class ShortParameters {
 	}
 	
 	public String getRain(){
-		return String.format("%.2f", rain);
+		return String.format("%.4f", rain);
+	}
+	
+	public String getTempAtNight() {
+		return String.format("%.2f",  tempAtNight);
 	}
 }

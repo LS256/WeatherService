@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    
+<%@ taglib prefix="spring" 	uri="http://www.springframework.org/tags"%>   
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -15,27 +15,32 @@
 		table { margin: auto; border-collapse: collapse;}
 		table, th, td { border: 1px solid #000000; text-align: center; }
 		.mainInfo { text-align: center; border: 1px dashed #000000; width: 60%; margin: auto; }
-		
+		.topBar { background-color: #000000; color: #efefef;}
+		a {text-decoration: none; color: #efefef;}
 	</style>
 	
 </head>
 
 <body>
 
+	<div class="topBar">
+		.
+	</div>
+
 	<div class="mainInfo">
-		<h1>Weather forecast for ${cityName}</h1>
-		<h1>Country code ${countryCode}</h1>
+		<h1><spring:message code="WebController.WeatherForecast.Invitation" /> ${cityName}</h1>
+		<h1><spring:message code="WebController.WeatherForecast.CountryCode" /> ${countryCode}</h1>
 	</div>
 
 	<table border="1">
 		<tr>
-			<td>TimeStamp</td>
-			<td>Temperatura</td>
-			<td>Description</td>
-			<td>Graphic</td>
-			<td>Rain</td>
-			<td>WindSpeed</td>
-			<td>WindDeg</td>
+			<td><spring:message code="WebController.WeatherForecast.TimeStamp" /></td>
+			<td><spring:message code="WebController.WeatherForecast.Temperature" /></td>
+			<td><spring:message code="WebController.WeatherForecast.Description" /></td>
+			<td><spring:message code="WebController.WeatherForecast.Graphic" /></td>
+			<td><spring:message code="WebController.WeatherForecast.Rain" /></td>
+			<td><spring:message code="WebController.WeatherForecast.WindSpeed" /></td>
+			<td><spring:message code="WebController.WeatherForecast.WindDeg" /></td>
 		</tr>
 		<c:forEach var="element" items="${tempList}">
 			<tr>
