@@ -16,6 +16,7 @@
 		table, th, td { border: 1px solid #000000; text-align: center; }
 		.mainInfo { text-align: center; border: 1px dashed #000000; width: 60%; margin: auto; }
 		.topBar { background-color: #000000; color: #efefef;}
+		.languageTopBar { background-color: #000000; color: #efefef; float: right; min-width: 30px; font-size: 15px; padding: 3px; margin-top: 0px;}
 		a {text-decoration: none; color: #efefef;}
 	</style>
 	
@@ -24,7 +25,8 @@
 <body>
 
 	<div class="topBar">
-		.
+		<div class="languageTopBar"><a href="weatherForecast">&#x1F50D <spring:message code="WebController.weatherForecast.SearchDescription" /></a></div>
+		<div style="clear: both"></div>	
 	</div>
 
 	<div class="mainInfo">

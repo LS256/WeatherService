@@ -21,7 +21,7 @@
 		.error { color: #ff0000; }
 		.errorblock { color: #000; background-color: #ffEEEE; border: 3px solid #ff0000; padding: 8px; margin: 16px; }
 		.topBar { background-color: #000000; color: #efefef; height: 30px;}
-		.languageTopBar { background-color: #000000; color: #efefef; float: right; min-width: 30px; font-size: 20px; padding: 3px; margin-top: 6px;}		
+		.languageTopBar { background-color: #000000; color: #efefef; float: right; min-width: 30px; font-size: 15px; padding: 3px; margin-top: 6px;}		
 		a {text-decoration: none; color: #efefef;}
 		.loginFrame {margin: auto; border: 1px dashed #000000; width: 40%; padding: 10px; line-height: 2;'}
 	</style>
@@ -41,13 +41,10 @@
 		<input type="text" name="cityNameInput" value="Lodz"></br>
 		<input type="checkbox" name="weatherType" value="shortTerm" checked="checked" /><spring:message code="WebController.startPage.ShortTerm" /></br>
 		<input type="checkbox" name="weatherType" value="longTerm" /><spring:message code="WebController.startPage.LongTerm" /></br>
-		<input type="submit" value="Search" />
+		<input type="submit" value="&#x1F50D Search" />
 		
 	</form:form>
 </div>
-
-
-
 
 </body>
 </html>
