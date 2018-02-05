@@ -8,18 +8,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css" />
-	<title>Weather forecast service</title>
-	
-	<style>
-		body { background-color: #efefef; }
-		table { margin: auto; border-collapse: collapse;}
-		table, th, td { border: 1px solid #000000; text-align: center; }
-		.mainInfo { text-align: center; border: 1px dashed #000000; width: 60%; margin: auto; }
-		.topBar { background-color: #000000; color: #efefef;}
-		.languageTopBar { background-color: #000000; color: #efefef; float: right; min-width: 30px; font-size: 15px; padding: 3px; margin-top: 0px;}
-		a {text-decoration: none; color: #efefef;}
-	</style>
-	
+	<title>Weather forecast service</title>	
 </head>
 
 <body>

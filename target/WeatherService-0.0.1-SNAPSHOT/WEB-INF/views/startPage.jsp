@@ -8,22 +8,12 @@
 <%@ taglib prefix="spring" 	uri="http://www.springframework.org/tags"%>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www8080
-	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-	    <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="<c:url value='/resources/css/style.css' />" rel="stylesheet">    
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 	<title>Weather forecast service</title>
 	
-	<style>
 
-		td { text-align: center; }
-		.error { color: #ff0000; }
-		.errorblock { color: #000; background-color: #ffEEEE; border: 3px solid #ff0000; padding: 8px; margin: 16px; }
-		.topBar { background-color: #000000; color: #efefef; height: 30px;}
-		.languageTopBar { background-color: #000000; color: #efefef; float: right; min-width: 30px; font-size: 15px; padding: 3px; margin-top: 6px;}		
-		a {text-decoration: none; color: #efefef;}
-		.loginFrame {margin: auto; border: 1px dashed #000000; width: 40%; padding: 10px; line-height: 2;'}
-	</style>
 	
 </head>
 
