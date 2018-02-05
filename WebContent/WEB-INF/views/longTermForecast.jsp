@@ -39,6 +39,7 @@
 		<tr>
 			<td><spring:message code="WebController.LongTermForecast.TimeStamp" /></td>
 			<td><spring:message code="WebController.LongTermForecast.Temperature" /></td>
+			<td><spring:message code="WebController.LongTermForecast.NightTemperature" /></td>			
 			<td><spring:message code="WebController.LongTermForecast.Description" /></td>
 			<td><spring:message code="WebController.LongTermForecast.Graphic" /></td>
 			<td><spring:message code="WebController.LongTermForecast.Rain" /></td>

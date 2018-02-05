@@ -25,7 +25,7 @@
 <body>
 
 	<div class="topBar">
-		<div class="languageTopBar"><a href="weatherForecast">&#x1F50D <spring:message code="WebController.weatherForecast.SearchDescription" /></a></div>
+		<div class="languageTopBar"><a href="weatherForecast">&#x1F50D <spring:message code="WebController.WeatherForecast.SearchDescription" /></a></div>
 		<div style="clear: both"></div>	
 	</div>
 

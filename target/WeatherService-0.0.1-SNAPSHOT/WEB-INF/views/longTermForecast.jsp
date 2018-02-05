@@ -25,7 +25,7 @@
 
 <body>
 	<div class="topBar">
-		<div class="languageTopBar"><a href="weatherForecast">&#x1F50D <spring:message code="WebController.longTermForecast.SearchDescription" /></a></div>
+		<div class="languageTopBar"><a href="weatherForecast">&#x1F50D <spring:message code="WebController.LongTermForecast.SearchDescription" /></a></div>
 		<div style="clear: both"></div>	
 	</div>
 
@@ -39,6 +39,7 @@
 		<tr>
 			<td><spring:message code="WebController.LongTermForecast.TimeStamp" /></td>
 			<td><spring:message code="WebController.LongTermForecast.Temperature" /></td>
+			<td><spring:message code="WebController.LongTermForecast.NightTemperature" /></td>			
 			<td><spring:message code="WebController.LongTermForecast.Description" /></td>
 			<td><spring:message code="WebController.LongTermForecast.Graphic" /></td>
 			<td><spring:message code="WebController.LongTermForecast.Rain" /></td>
