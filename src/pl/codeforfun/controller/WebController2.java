@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class WebController2 {
 
-@RequestMapping(value="/papa", method=RequestMethod.GET)
+@RequestMapping(value="/newController", method=RequestMethod.GET)
 public String getNewPage(Model model){
 	return "startPage";
 }
