@@ -33,6 +33,10 @@ public class WebController {
 	@Autowired
 	UrlGenerator urlGenerator;
 
+	/*
+	* method to map choosen addres by using GET method
+	* @ return "startPage" page with loaction input for checking weather forecast
+	*/
 	@RequestMapping(value="/weatherForecast", method=RequestMethod.GET)
 	public String startSearching(Model model) {
 		return "startPage";
